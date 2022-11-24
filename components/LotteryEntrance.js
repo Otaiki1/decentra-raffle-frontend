@@ -13,9 +13,11 @@ export default function LotteryEntrance(){
 
     return(
         <div>
-            <button onClick={async() => {
+            <button class="rounded ml-auto font-bold bg-blue-500 mt-4 text-white p-2" onClick={async() => {
                await enterRaffle();
-            }}></button>
+            }}>
+                Enter Lottery
+            </button>
         </div>
     )
 }
