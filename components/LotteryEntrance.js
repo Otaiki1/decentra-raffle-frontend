@@ -37,11 +37,11 @@ export default function LotteryEntrance(){
         if(isWeb3Enabled){
             updateUI()
         }
-    }, [isWeb3Enabled]);
+    }, []);
 
     return(
         <div>
-            <button class="rounded ml-auto font-bold bg-blue-500 mt-4 text-white p-2" onClick={async() => {
+            <button className="rounded ml-auto font-bold bg-blue-500 mt-4 text-white p-2" onClick={async() => {
                await enterRaffle();
             }}>
                 Enter Lottery
